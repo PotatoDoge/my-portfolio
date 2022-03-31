@@ -1,0 +1,45 @@
+  /*
+  <------- INICIA CSS DE TOOLBAR ------->
+  */
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar#options{
+    display: inline-block;
+    border: 2px solid red;
+    margin: 4px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar button{
+    margin: 10px;
+  }
+
+  .toolbar button:hover{
+    opacity: .7;
+  }
+
+  /*
+  <------- TERMINA CSS DE TOOLBAR ------->
+  */
