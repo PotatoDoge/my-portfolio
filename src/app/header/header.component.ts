@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MenuItem } from '../menu-item';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  menuItems: MenuItem[] = [
+    {
+      label: 'About me',
+      icon: 'login'
+    },
+    {
+      label: 'Education',
+      icon: 'help'
+    },
+    {
+      label: 'Projects',
+      icon: 'attach_money'
+    },
+    {
+      label: 'Social Media',
+      icon: 'notes'
+    },
+    {
+      label: 'Contact Me',
+      icon: 'slideshow'
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {

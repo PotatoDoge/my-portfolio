@@ -2,16 +2,18 @@
   <------- INICIA CSS DE TOOLBAR ------->
   */
   .toolbar {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
     display: flex;
     align-items: center;
-    background: rgba(0,0,0,0.5);
-    color: white;
+    background: transparent;
+    color: black;
     font-weight: 600;
+    z-index: 1000;
+    backdrop-filter: blur(25px);
   }
   
   .toolbar img {
@@ -24,10 +26,6 @@
     margin: 4px;
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
   .spacer {
     flex: 1;
   }
@@ -36,9 +34,6 @@
     margin: 10px;
   }
 
-  .toolbar button:hover{
-    background-color: black;
-  }
   /*
   <------- TERMINA CSS DE TOOLBAR ------->
   */
