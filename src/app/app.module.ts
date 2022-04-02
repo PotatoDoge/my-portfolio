@@ -10,8 +10,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {  MatMenuModule } from '@angular/material/menu';
-import {  MatDividerModule } from '@angular/material/divider';
+import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MdbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

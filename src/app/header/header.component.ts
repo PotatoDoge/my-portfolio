@@ -17,6 +17,10 @@ export class HeaderComponent implements OnInit {
       icon: 'help'
     },
     {
+      label:"Technologies",
+      icon:"help"
+    },
+    {
       label: 'Projects',
       icon: 'attach_money'
     },

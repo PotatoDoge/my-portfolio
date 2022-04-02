@@ -1,8 +1,26 @@
-<div class="about">
-    <div class="image">
-
-    </div>
+<div class="about" fxLayout="row" fxLayout.xs = "column" fxLayoutWrap fxLayoutGap="10%" fxLayoutAlign="center center">
+      <div *ngIf="images && images.length>0" class="carousel">
+        <img *ngFor="let image of images; let i = index"
+         [src] = "image.imageSrc" [alt]="image.imageAlt"
+         [ngClass]="{'image-active': selectedIndex === i}"
+         class = "fade" 
+        >
+        <div *ngIf="indicators" class="dot-container">
+          <span *ngFor="let dot of images;
+           let i=index" class="dot" 
+           [ngClass]="{'active': selectedIndex === i}"
+          (click)="selectImage(i)">
+          </span>
+        </div>
+      </div>
     <div class="about-text">
+      <!--  
+      <p>Hi! My name is Bastian Prado, I am a 20 year old mexican software engineering student. I am studying
+            at CETYS Univerisdad Ensenada currently finishing my 3rd year. I was born in Mexico City and lived there
+            until the age of 15. For my second year of high school (I was almost 16 years old)
+        </p>-->
+        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
 
+        </p>
     </div>
 </div>
