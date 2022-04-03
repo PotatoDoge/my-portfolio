@@ -1,6 +1,6 @@
 <div class="about" fxLayout="row" fxLayout.xs = "column" fxLayoutWrap fxLayoutGap="10%" fxLayoutAlign="center center">
       <div *ngIf="images && images.length>0" class="carousel">
-        <img *ngFor="let image of images; let i = index"
+        <img (click)="changeImageOnClick()" *ngFor="let image of images; let i = index"
          [src] = "image.imageSrc" [alt]="image.imageAlt"
          [ngClass]="{'image-active': selectedIndex === i}"
          class = "fade" 

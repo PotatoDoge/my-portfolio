@@ -32,16 +32,24 @@ export class AboutMeComponent implements OnInit {
   selectedIndex = 0;
 
   @Input() indicators = true;
-  @Input() controls = true; 
-
-
+  
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
   selectImage(index: number): void{
     this.selectedIndex = index;
+  }
+
+  changeImageOnClick(){
+    if(this.selectedIndex < this.images.length-1){
+      this.selectedIndex++;
+    }
+    else if(this.selectedIndex === this.images.length - 1){
+      this.selectedIndex = 0;
+    }
   }
 
 }
