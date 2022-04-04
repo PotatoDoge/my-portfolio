@@ -13,13 +13,15 @@ import {  MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { EducationComponent } from './education/education.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
