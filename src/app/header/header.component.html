@@ -7,7 +7,7 @@
   <div class="spacer"></div>
   <div class="options">
 
-    <button mat-button *ngFor="let item of menuItems" fxHide.xs >
+    <button mat-button *ngFor="let item of menuItems" fxHide.xs (click)="goToSection(item.id)">
       {{item.label}}
     </button>
 
@@ -16,9 +16,8 @@
     </button>
 
   <mat-menu #dropMenu="matMenu">
-      <ng-container *ngFor="let item of menuItems">
-          <button mat-menu-item>
-              <mat-icon class="mr">{{item.icon}}</mat-icon>
+      <ng-container *ngFor="let item of menuItems" >
+          <button mat-menu-item (click)="goToSection(item.id)">
               {{item.label}}
           </button>
           <mat-divider></mat-divider>
