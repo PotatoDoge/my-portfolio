@@ -21,7 +21,7 @@ import { EducationComponent } from './education/education.component';
     AppComponent,
     HeaderComponent,
     AboutMeComponent,
-    EducationComponent
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
